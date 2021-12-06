@@ -1,6 +1,5 @@
-{
-    "ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::038540414823:role/ECS-task-service-Role",
+"ipcMode": null,
+    "executionRoleArn": "arn:aws:iam::038540414823:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
             "dnsSearchDomains": null,
@@ -26,39 +25,31 @@
             "linuxParameters": null,
             "cpu": 0,
             "environment": [
-                
-                {
-                    "name": "database__connection__password",
-                    "value": "password2021"
-                },
+               
                 {
                     "name": "AWS_DEFAULT_REGION",
                     "value": "us-east-1"
+                },
+
+                {
+                    "name": "database__client",
+                    "value": "mysql"
+                },
+                {
+                    "name": "database__connection__database",
+                    "value": "ghost"
                 },
                 {
                     "name": "database__connection__host",
                     "value": "ghost-db.cluster-c7foofkf2xt2.us-east-1.rds.amazonaws.com"
                 },
                 {
-                    "name": "storage__s3__region",
-                    "value": "us-east-1"
-                },
-                {
-                    "name": "url",
-                    "value": "http://localhost:2368"
-                },
-      
-                {
-                    "name": "storage__s3__bucket",
-                    "value": "ghost-s3-contents"
+                    "name": "database__connection__password",
+                    "value": "password2021"
                 },
                 {
                     "name": "database__connection__user",
                     "value": "admin"
-                },
-                {
-                    "name": "database__connection__database",
-                    "value": "ghost"
                 },
                 {
                     "name": "GHOST_STORAGE_ADAPTER_S3_PATH_BUCKET",
@@ -69,12 +60,20 @@
                     "value": "us-east-1"
                 },
                 {
-                    "name": "database__client",
-                    "value": "mysql"
-                },
-                {
                     "name": "storage__active",
                     "value": "s3"
+                },
+                {
+                    "name": "storage__s3__bucket",
+                    "value": "ghost-s3-contents"
+                },
+                {
+                    "name": "storage__s3__region",
+                    "value": "us-east-1"
+                },
+                {
+                    "name": "url",
+                    "value": "http://localhost:8080"
                 }
             ],
             "resourceRequirements": null,
@@ -94,7 +93,7 @@
             "memoryReservation": null,
             "volumesFrom": [],
             "stopTimeout": null,
-            "image": "<IMAGE1_NAME>",
+            "image":  "<IMAGE1_NAME>",
             "startTimeout": null,
             "firelensConfiguration": null,
             "dependsOn": null,
@@ -115,7 +114,7 @@
         }
     ],
     "memory": "4096",
-    "taskRoleArn": "arn:aws:iam::038540414823:role/ECS-task-service-Role",
+    "taskRoleArn": "arn:aws:iam::038540414823:role/ecsTaskExecutionRole",
     "family": "ghost",
     "pidMode": null,
     "requiresCompatibilities": [
@@ -140,10 +139,5 @@
             "dockerVolumeConfiguration": null
         }
     ],
-    "tags": [
-        {
-            "key": "image",
-            "value": "ghost"
-        }
-        ]
+    "tags": []
 }

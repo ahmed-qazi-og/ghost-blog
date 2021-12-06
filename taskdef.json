@@ -80,7 +80,7 @@
                     "sourceVolume": "contents"
                 }
             ],
-            "image":  "038540414823.dkr.ecr.us-east-1.amazonaws.com/rnair-ghost:250f720",
+            "image":  "<IMAGE1_NAME>",
             "name": "ghost-cont"
         }
     ],

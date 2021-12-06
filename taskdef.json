@@ -1,4 +1,4 @@
-{"executionRoleArn": "arn:aws:iam::038540414823:role/ecsTaskExecutionRole",
+{"executionRoleArn": "arn:aws:iam::038540414823:role/ECS-task-service-Role",
     "containerDefinitions": [
         {
             "logConfiguration": {
@@ -85,7 +85,7 @@
         }
     ],
     "memory": "4096",
-    "taskRoleArn": "arn:aws:iam::038540414823:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::038540414823:role/ECS-task-service-Role",
     "family": "ghost",
     "pidMode": null,
     "requiresCompatibilities": [

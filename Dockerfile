@@ -16,8 +16,7 @@
 #RUN mkdir -p ./content/adapters/storage && cp -r ./node_modules/ghost-storage-adapter-s3 ./content/adapters/storage/s3
 
 ###RN DOcker##
-FROM public.ecr.aws/e5s7u0b5/ghost-4-alpine:latest
-
+FROM ghost:latest
 WORKDIR /var/lib/ghost
 
 COPY . /var/lib/ghost/current

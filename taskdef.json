@@ -1,9 +1,6 @@
-"ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::038540414823:role/ecsTaskExecutionRole",
+{"executionRoleArn": "arn:aws:iam::038540414823:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
-            "dnsSearchDomains": null,
-            "environmentFiles": null,
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "secretOptions": null,
@@ -76,9 +73,6 @@
                     "value": "http://localhost:8080"
                 }
             ],
-            "resourceRequirements": null,
-            "ulimits": null,
-            "dnsServers": null,
             "mountPoints": [
                 {
                     "readOnly": null,
@@ -86,30 +80,7 @@
                     "sourceVolume": "contents"
                 }
             ],
-            "workingDirectory": null,
-            "secrets": null,
-            "dockerSecurityOptions": null,
-            "memory": null,
-            "memoryReservation": null,
-            "volumesFrom": [],
-            "stopTimeout": null,
             "image":  "<IMAGE1_NAME>",
-            "startTimeout": null,
-            "firelensConfiguration": null,
-            "dependsOn": null,
-            "disableNetworking": null,
-            "interactive": null,
-            "healthCheck": null,
-            "essential": true,
-            "links": null,
-            "hostname": null,
-            "extraHosts": null,
-            "pseudoTerminal": null,
-            "user": null,
-            "readonlyRootFilesystem": null,
-            "dockerLabels": null,
-            "systemControls": null,
-            "privileged": null,
             "name": "ghost-cont"
         }
     ],
@@ -122,21 +93,16 @@
     ],
     "networkMode": "awsvpc",
     "runtimePlatform": {
-        "operatingSystemFamily": "LINUX",
-        "cpuArchitecture": null
+        "operatingSystemFamily": "LINUX"
     },
     "cpu": "2048",
-    "inferenceAccelerators": [],
-    "proxyConfiguration": null,
     "volumes": [
         {
-            "fsxWindowsFileServerVolumeConfiguration": null,
-            "efsVolumeConfiguration": null,
+
             "name": "contents",
             "host": {
                 "sourcePath": null
-            },
-            "dockerVolumeConfiguration": null
+            }
         }
     ],
     "tags": []

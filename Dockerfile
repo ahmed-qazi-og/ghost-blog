@@ -1,5 +1,5 @@
-FROM  public.ecr.aws/e5s7u0b5/ghost-4-alpine:latest
-
+#FROM  public.ecr.aws/e5s7u0b5/ghost-4-alpine:latest
+FROM ghost:4-alpine
 WORKDIR /var/lib/ghost
 
 COPY . /var/lib/ghost/current

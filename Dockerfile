@@ -15,7 +15,7 @@
 
 #RUN mkdir -p ./content/adapters/storage && cp -r ./node_modules/ghost-storage-adapter-s3 ./content/adapters/storage/s3
 
-###RN DOcker####
+###RN DOcker#######
 FROM 038540414823.dkr.ecr.us-east-1.amazonaws.com/rnair-ghost:250f720
 WORKDIR /var/lib/ghost
 

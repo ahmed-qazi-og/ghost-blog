@@ -38,11 +38,11 @@
                 },
                 {
                     "name": "database__connection__host",
-                    "value": "ghost-db.cluster-c7foofkf2xt2.us-east-1.rds.amazonaws.com"
+                    "value": "ghost-admin.cluster-c7foofkf2xt2.us-east-1.rds.amazonaws.com"
                 },
                 {
                     "name": "database__connection__password",
-                    "value": "password2021"
+                    "value": "ahmed123"
                 },
                 {
                     "name": "database__connection__user",

@@ -35,13 +35,6 @@ COPY content/settings/routes.yaml ./content.orig/settings/routes.yaml
 
 
 
-
--------------------------------------
-
-
-
-`
-
 ##########
 #COPY config.production.json /var/lib/ghost/
 ### Added by Ahhmed

@@ -13,7 +13,6 @@
             "entryPoint": null,
             "portMappings": [
                 {
-                    "hostPort": 2368,
                     "protocol": "tcp",
                     "containerPort": 2368
                 }
@@ -70,7 +69,7 @@
                 },
                 {
                     "name": "url",
-                    "value": "http://rnair-ghost-alb-1290736896.us-east-1.elb.amazonaws.com:2368"
+                    "value": "http://rnair-ghost-alb-1290736896.us-east-1.elb.amazonaws.com"
                 }
             ],
             "mountPoints": [
